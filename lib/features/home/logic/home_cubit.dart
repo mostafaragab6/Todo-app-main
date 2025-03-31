@@ -41,6 +41,7 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   void logout() async {
+    emit(const HomeState.logoutLoading());
     DioFactory.dio
         ?.post('https://todo.iraqsapp.com/auth/logout')
         .then((onValue) async {
@@ -67,6 +68,7 @@ class HomeCubit extends Cubit<HomeState> {
 
   String? taskId;
   void deleteTask({String? fromHomeTaskId}) async {
+    emit(const HomeState.deleteTaskLoading());
     final response =
         await _deleteTaskRepo.deleteTask(fromHomeTaskId ?? taskId ?? '');
 

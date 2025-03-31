@@ -16,8 +16,12 @@ class HomeState<T> with _$HomeState<T> {
       SpecificTaskSuccess;
   const factory HomeState.specificTaskError(String error) = SpecificTaskError;
 
+  const factory HomeState.logoutLoading() = LogoutLoading;
+
   const factory HomeState.logoutSuccess(String? message) = LogoutSuccess;
   const factory HomeState.logoutError(String? message) = LogoutError;
+
+  const factory HomeState.deleteTaskLoading() = DeleteTaskLoading;
 
   const factory HomeState.deleteTaskSuccess(String? message) =
       DeleteTaskSuccess;

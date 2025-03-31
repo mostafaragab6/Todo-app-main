@@ -25,8 +25,10 @@ mixin _$HomeState<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) =>
@@ -40,8 +42,10 @@ mixin _$HomeState<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) =>
@@ -55,8 +59,10 @@ mixin _$HomeState<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -71,8 +77,10 @@ mixin _$HomeState<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) =>
@@ -86,8 +94,10 @@ mixin _$HomeState<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) =>
@@ -101,8 +111,10 @@ mixin _$HomeState<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -179,8 +191,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -197,8 +211,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -215,8 +231,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -237,8 +255,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -255,8 +275,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -273,8 +295,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -338,8 +362,10 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -356,8 +382,10 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -374,8 +402,10 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -396,8 +426,10 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -414,8 +446,10 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -432,8 +466,10 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -532,8 +568,10 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -550,8 +588,10 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -568,8 +608,10 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -590,8 +632,10 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -608,8 +652,10 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -626,8 +672,10 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -699,8 +747,10 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -717,8 +767,10 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -735,8 +787,10 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -757,8 +811,10 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -775,8 +831,10 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -793,8 +851,10 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -859,8 +919,10 @@ class _$SpecificTaskLoadingImpl<T> implements SpecificTaskLoading<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -877,8 +939,10 @@ class _$SpecificTaskLoadingImpl<T> implements SpecificTaskLoading<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -895,8 +959,10 @@ class _$SpecificTaskLoadingImpl<T> implements SpecificTaskLoading<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -917,8 +983,10 @@ class _$SpecificTaskLoadingImpl<T> implements SpecificTaskLoading<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -935,8 +1003,10 @@ class _$SpecificTaskLoadingImpl<T> implements SpecificTaskLoading<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -953,8 +1023,10 @@ class _$SpecificTaskLoadingImpl<T> implements SpecificTaskLoading<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -1047,8 +1119,10 @@ class _$SpecificTaskSuccessImpl<T> implements SpecificTaskSuccess<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -1065,8 +1139,10 @@ class _$SpecificTaskSuccessImpl<T> implements SpecificTaskSuccess<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -1083,8 +1159,10 @@ class _$SpecificTaskSuccessImpl<T> implements SpecificTaskSuccess<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -1105,8 +1183,10 @@ class _$SpecificTaskSuccessImpl<T> implements SpecificTaskSuccess<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -1123,8 +1203,10 @@ class _$SpecificTaskSuccessImpl<T> implements SpecificTaskSuccess<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -1141,8 +1223,10 @@ class _$SpecificTaskSuccessImpl<T> implements SpecificTaskSuccess<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -1244,8 +1328,10 @@ class _$SpecificTaskErrorImpl<T> implements SpecificTaskError<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -1262,8 +1348,10 @@ class _$SpecificTaskErrorImpl<T> implements SpecificTaskError<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -1280,8 +1368,10 @@ class _$SpecificTaskErrorImpl<T> implements SpecificTaskError<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -1302,8 +1392,10 @@ class _$SpecificTaskErrorImpl<T> implements SpecificTaskError<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -1320,8 +1412,10 @@ class _$SpecificTaskErrorImpl<T> implements SpecificTaskError<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -1338,8 +1432,10 @@ class _$SpecificTaskErrorImpl<T> implements SpecificTaskError<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -1362,6 +1458,177 @@ abstract class SpecificTaskError<T> implements HomeState<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SpecificTaskErrorImplCopyWith<T, _$SpecificTaskErrorImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LogoutLoadingImplCopyWith<T, $Res> {
+  factory _$$LogoutLoadingImplCopyWith(_$LogoutLoadingImpl<T> value,
+          $Res Function(_$LogoutLoadingImpl<T>) then) =
+      __$$LogoutLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LogoutLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$LogoutLoadingImpl<T>>
+    implements _$$LogoutLoadingImplCopyWith<T, $Res> {
+  __$$LogoutLoadingImplCopyWithImpl(_$LogoutLoadingImpl<T> _value,
+      $Res Function(_$LogoutLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$LogoutLoadingImpl<T> implements LogoutLoading<T> {
+  const _$LogoutLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.logoutLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$LogoutLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<Data?>? data) success,
+    required TResult Function() error,
+    required TResult Function() specificTaskLoading,
+    required TResult Function(Data? specificTask) specificTaskSuccess,
+    required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
+    required TResult Function(String? message) logoutSuccess,
+    required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
+    required TResult Function(String? message) deleteTaskSuccess,
+    required TResult Function(String? message) deleteTaskError,
+  }) {
+    return logoutLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Data?>? data)? success,
+    TResult? Function()? error,
+    TResult? Function()? specificTaskLoading,
+    TResult? Function(Data? specificTask)? specificTaskSuccess,
+    TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
+    TResult? Function(String? message)? logoutSuccess,
+    TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
+    TResult? Function(String? message)? deleteTaskSuccess,
+    TResult? Function(String? message)? deleteTaskError,
+  }) {
+    return logoutLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<Data?>? data)? success,
+    TResult Function()? error,
+    TResult Function()? specificTaskLoading,
+    TResult Function(Data? specificTask)? specificTaskSuccess,
+    TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
+    TResult Function(String? message)? logoutSuccess,
+    TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
+    TResult Function(String? message)? deleteTaskSuccess,
+    TResult Function(String? message)? deleteTaskError,
+    required TResult orElse(),
+  }) {
+    if (logoutLoading != null) {
+      return logoutLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
+    required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
+    required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
+    required TResult Function(LogoutSuccess<T> value) logoutSuccess,
+    required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
+    required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
+    required TResult Function(DeleteTaskError<T> value) deleteTaskError,
+  }) {
+    return logoutLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
+    TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
+    TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
+    TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
+    TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
+    TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
+    TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
+  }) {
+    return logoutLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
+    TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
+    TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
+    TResult Function(LogoutSuccess<T> value)? logoutSuccess,
+    TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
+    TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
+    TResult Function(DeleteTaskError<T> value)? deleteTaskError,
+    required TResult orElse(),
+  }) {
+    if (logoutLoading != null) {
+      return logoutLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LogoutLoading<T> implements HomeState<T> {
+  const factory LogoutLoading() = _$LogoutLoadingImpl<T>;
 }
 
 /// @nodoc
@@ -1440,8 +1707,10 @@ class _$LogoutSuccessImpl<T> implements LogoutSuccess<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -1458,8 +1727,10 @@ class _$LogoutSuccessImpl<T> implements LogoutSuccess<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -1476,8 +1747,10 @@ class _$LogoutSuccessImpl<T> implements LogoutSuccess<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -1498,8 +1771,10 @@ class _$LogoutSuccessImpl<T> implements LogoutSuccess<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -1516,8 +1791,10 @@ class _$LogoutSuccessImpl<T> implements LogoutSuccess<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -1534,8 +1811,10 @@ class _$LogoutSuccessImpl<T> implements LogoutSuccess<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -1635,8 +1914,10 @@ class _$LogoutErrorImpl<T> implements LogoutError<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -1653,8 +1934,10 @@ class _$LogoutErrorImpl<T> implements LogoutError<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -1671,8 +1954,10 @@ class _$LogoutErrorImpl<T> implements LogoutError<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -1693,8 +1978,10 @@ class _$LogoutErrorImpl<T> implements LogoutError<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -1711,8 +1998,10 @@ class _$LogoutErrorImpl<T> implements LogoutError<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -1729,8 +2018,10 @@ class _$LogoutErrorImpl<T> implements LogoutError<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -1752,6 +2043,178 @@ abstract class LogoutError<T> implements HomeState<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LogoutErrorImplCopyWith<T, _$LogoutErrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteTaskLoadingImplCopyWith<T, $Res> {
+  factory _$$DeleteTaskLoadingImplCopyWith(_$DeleteTaskLoadingImpl<T> value,
+          $Res Function(_$DeleteTaskLoadingImpl<T>) then) =
+      __$$DeleteTaskLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$DeleteTaskLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$DeleteTaskLoadingImpl<T>>
+    implements _$$DeleteTaskLoadingImplCopyWith<T, $Res> {
+  __$$DeleteTaskLoadingImplCopyWithImpl(_$DeleteTaskLoadingImpl<T> _value,
+      $Res Function(_$DeleteTaskLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeleteTaskLoadingImpl<T> implements DeleteTaskLoading<T> {
+  const _$DeleteTaskLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.deleteTaskLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteTaskLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<Data?>? data) success,
+    required TResult Function() error,
+    required TResult Function() specificTaskLoading,
+    required TResult Function(Data? specificTask) specificTaskSuccess,
+    required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
+    required TResult Function(String? message) logoutSuccess,
+    required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
+    required TResult Function(String? message) deleteTaskSuccess,
+    required TResult Function(String? message) deleteTaskError,
+  }) {
+    return deleteTaskLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<Data?>? data)? success,
+    TResult? Function()? error,
+    TResult? Function()? specificTaskLoading,
+    TResult? Function(Data? specificTask)? specificTaskSuccess,
+    TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
+    TResult? Function(String? message)? logoutSuccess,
+    TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
+    TResult? Function(String? message)? deleteTaskSuccess,
+    TResult? Function(String? message)? deleteTaskError,
+  }) {
+    return deleteTaskLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<Data?>? data)? success,
+    TResult Function()? error,
+    TResult Function()? specificTaskLoading,
+    TResult Function(Data? specificTask)? specificTaskSuccess,
+    TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
+    TResult Function(String? message)? logoutSuccess,
+    TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
+    TResult Function(String? message)? deleteTaskSuccess,
+    TResult Function(String? message)? deleteTaskError,
+    required TResult orElse(),
+  }) {
+    if (deleteTaskLoading != null) {
+      return deleteTaskLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
+    required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
+    required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
+    required TResult Function(LogoutSuccess<T> value) logoutSuccess,
+    required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
+    required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
+    required TResult Function(DeleteTaskError<T> value) deleteTaskError,
+  }) {
+    return deleteTaskLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
+    TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
+    TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
+    TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
+    TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
+    TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
+    TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
+  }) {
+    return deleteTaskLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
+    TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
+    TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
+    TResult Function(LogoutSuccess<T> value)? logoutSuccess,
+    TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
+    TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
+    TResult Function(DeleteTaskError<T> value)? deleteTaskError,
+    required TResult orElse(),
+  }) {
+    if (deleteTaskLoading != null) {
+      return deleteTaskLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteTaskLoading<T> implements HomeState<T> {
+  const factory DeleteTaskLoading() = _$DeleteTaskLoadingImpl<T>;
 }
 
 /// @nodoc
@@ -1831,8 +2294,10 @@ class _$DeleteTaskSuccessImpl<T> implements DeleteTaskSuccess<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -1849,8 +2314,10 @@ class _$DeleteTaskSuccessImpl<T> implements DeleteTaskSuccess<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -1867,8 +2334,10 @@ class _$DeleteTaskSuccessImpl<T> implements DeleteTaskSuccess<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -1889,8 +2358,10 @@ class _$DeleteTaskSuccessImpl<T> implements DeleteTaskSuccess<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -1907,8 +2378,10 @@ class _$DeleteTaskSuccessImpl<T> implements DeleteTaskSuccess<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -1925,8 +2398,10 @@ class _$DeleteTaskSuccessImpl<T> implements DeleteTaskSuccess<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),
@@ -2027,8 +2502,10 @@ class _$DeleteTaskErrorImpl<T> implements DeleteTaskError<T> {
     required TResult Function() specificTaskLoading,
     required TResult Function(Data? specificTask) specificTaskSuccess,
     required TResult Function(String error) specificTaskError,
+    required TResult Function() logoutLoading,
     required TResult Function(String? message) logoutSuccess,
     required TResult Function(String? message) logoutError,
+    required TResult Function() deleteTaskLoading,
     required TResult Function(String? message) deleteTaskSuccess,
     required TResult Function(String? message) deleteTaskError,
   }) {
@@ -2045,8 +2522,10 @@ class _$DeleteTaskErrorImpl<T> implements DeleteTaskError<T> {
     TResult? Function()? specificTaskLoading,
     TResult? Function(Data? specificTask)? specificTaskSuccess,
     TResult? Function(String error)? specificTaskError,
+    TResult? Function()? logoutLoading,
     TResult? Function(String? message)? logoutSuccess,
     TResult? Function(String? message)? logoutError,
+    TResult? Function()? deleteTaskLoading,
     TResult? Function(String? message)? deleteTaskSuccess,
     TResult? Function(String? message)? deleteTaskError,
   }) {
@@ -2063,8 +2542,10 @@ class _$DeleteTaskErrorImpl<T> implements DeleteTaskError<T> {
     TResult Function()? specificTaskLoading,
     TResult Function(Data? specificTask)? specificTaskSuccess,
     TResult Function(String error)? specificTaskError,
+    TResult Function()? logoutLoading,
     TResult Function(String? message)? logoutSuccess,
     TResult Function(String? message)? logoutError,
+    TResult Function()? deleteTaskLoading,
     TResult Function(String? message)? deleteTaskSuccess,
     TResult Function(String? message)? deleteTaskError,
     required TResult orElse(),
@@ -2085,8 +2566,10 @@ class _$DeleteTaskErrorImpl<T> implements DeleteTaskError<T> {
     required TResult Function(SpecificTaskLoading<T> value) specificTaskLoading,
     required TResult Function(SpecificTaskSuccess<T> value) specificTaskSuccess,
     required TResult Function(SpecificTaskError<T> value) specificTaskError,
+    required TResult Function(LogoutLoading<T> value) logoutLoading,
     required TResult Function(LogoutSuccess<T> value) logoutSuccess,
     required TResult Function(LogoutError<T> value) logoutError,
+    required TResult Function(DeleteTaskLoading<T> value) deleteTaskLoading,
     required TResult Function(DeleteTaskSuccess<T> value) deleteTaskSuccess,
     required TResult Function(DeleteTaskError<T> value) deleteTaskError,
   }) {
@@ -2103,8 +2586,10 @@ class _$DeleteTaskErrorImpl<T> implements DeleteTaskError<T> {
     TResult? Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult? Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult? Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult? Function(LogoutLoading<T> value)? logoutLoading,
     TResult? Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult? Function(LogoutError<T> value)? logoutError,
+    TResult? Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult? Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult? Function(DeleteTaskError<T> value)? deleteTaskError,
   }) {
@@ -2121,8 +2606,10 @@ class _$DeleteTaskErrorImpl<T> implements DeleteTaskError<T> {
     TResult Function(SpecificTaskLoading<T> value)? specificTaskLoading,
     TResult Function(SpecificTaskSuccess<T> value)? specificTaskSuccess,
     TResult Function(SpecificTaskError<T> value)? specificTaskError,
+    TResult Function(LogoutLoading<T> value)? logoutLoading,
     TResult Function(LogoutSuccess<T> value)? logoutSuccess,
     TResult Function(LogoutError<T> value)? logoutError,
+    TResult Function(DeleteTaskLoading<T> value)? deleteTaskLoading,
     TResult Function(DeleteTaskSuccess<T> value)? deleteTaskSuccess,
     TResult Function(DeleteTaskError<T> value)? deleteTaskError,
     required TResult orElse(),

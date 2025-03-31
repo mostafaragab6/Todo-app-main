@@ -43,9 +43,7 @@ class HomeBlocBuilder extends StatelessWidget {
               return const SizedBox.shrink();
             },
             logoutError: (error) {
-              print(error);
               if (error!.contains('status code of 401')) {
-                print('here');
                 DioFactory.refreshToken();
                 context.read<HomeCubit>().logout();
               }
